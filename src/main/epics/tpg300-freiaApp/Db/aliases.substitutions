@@ -1,0 +1,8 @@
+file aliases.template
+{
+pattern{PREFIX, P, CHA1, CHA2, CHB1, CHB2}
+{	TPG300-1, CstatH-Vac, PT010, PT011, PT012, PT013}
+{	TPG300-2, CstatH-Vac, PT016, PT014, PT017, PT015}
+#{	TPG300-2, CstatH-Vac, PT014, PT015, PT016, PT017} changed 2015-04-13}
+{	TPG300-3, CstatH-Vac, PT020, PT021, PT022, PT023}
+}

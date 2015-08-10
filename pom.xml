@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.iter.codac.units</groupId>
+    <artifactId>epics-tpg300-freia</artifactId>
+    <packaging>codac</packaging>
+    <version>1.4</version>
+    <name>CODAC Core System epics-tpg300-freia module</name>
+    <description>EPICS support sample for the Pfeiffer TPG300 vacuum gauge controller</description>
+    <url>http://www.ess.org/</url>
+ 
+    <!-- project properties -->
+    <properties>
+        <unit.type>module</unit.type>
+    </properties>
+
+    <!-- parent pom.xml -->
+    <parent>
+        <groupId>org.iter.codac.units</groupId>
+        <artifactId>maven-iter-settings</artifactId>
+        <version>4.1.0</version>
+    </parent>
+
+    <!-- unit owner and developers -->
+    <developers>
+        <developer>
+            <id>kstrnisa</id>
+            <roles>
+                <role>unit owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <!-- configuration of how the project is built -->
+    <build>
+        <defaultGoal>compile</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-iter-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <packaging>
+                        <package>
+                        	<requires>%{codac_rpm_prefix}-epics-tpg300</requires>
+                        	<include type="ioc" name="tpg300-freia" runlevels="345" />
+						</package>
+                        <package name="src">
+                            <include type="source" source="./src/main/epics" target="apps/${project.artifactId}/src"/>
+                        </package>
+                    </packaging>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

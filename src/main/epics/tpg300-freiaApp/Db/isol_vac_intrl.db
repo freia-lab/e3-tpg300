@@ -1,0 +1,58 @@
+# HNOSS Isolation vacuum interlocks
+record(calc, "$(P):Ctrl-$(B):$(ACT1)-sPerm") {
+   field (INPA, "$(P):$(P_IN):sRdV")
+   field (INPB, "$(P):$(P_OUT1):sRdV")
+   field (INPC, "CstatH-$(T_IN):sRdV")
+   field (INPD, "$(P):$(FV):sOn")
+   field (INPE, "CstatH:Ctrl-$(B):$(ACT1)-s$(TP) PP")
+   field (INPF, "CstatH-Ctrl:opMode:sLocal")
+   field (INPG, "CstatH:Ctrl-$(B):$(ACT1)-s$(FV) PP")
+   field (INPH, "200")
+   field (INPI, "1e-2")
+   field (INPJ, "1000")
+   field (INPK, "273")
+   field (INPL, "0xC0")
+   field (CALC, "(ABS(A-B)<H||D)+((B<I||C>K)<<1)+E+G+(!F<<5)+L")
+   field (SCAN, "1 second")
+}
+
+record(calc, "CstatH:Ctrl-$(B):$(ACT1)-s$(FV)") {
+   field (INPA, "$(P):$(FV):sOnFlt")
+   field (INPB, "$(P):$(FV):sOffFlt")
+   field (INPC, "$(P):$(FV):sSim")
+   field (CALC, "((A+B+C)=0)<<4")
+}
+
+record(state,"$(P):Ctrl-$(B):$(ACT1)-sState") {
+   field (DESC, "State of the $(B):$(ACT1) sequence")
+}
+
+record(bo, "$(P):Ctrl-$(B):$(ACT1)-cOn") {
+  field (PINI, "YES")
+  field (ZNAM, "Stop")
+  field (ONAM, "Start")
+}
+
+record(calc, "$(P):Ctrl-$(B):$(ACT2)-sPerm") {
+   field (INPC, "CstatH-$(T_IN):sRdV")
+   field (INPD, "$(P):$(FV):sOn")
+   field (INPF, "CstatH-Ctrl:opMode:sLocal")
+   field (INPH, "200")
+   field (INPI, "1e-2")
+   field (INPJ, "1000")
+   field (INPK, "273")
+   field (INPL, "0xFC")
+   field (CALC, "(!F<<1)+(C>K)+L")
+   field (SCAN, "1 second")
+}
+
+record(state,"$(P):Ctrl-$(B):$(ACT2)-sState") {
+   field (DESC, "State of the $(B):$(ACT2) sequence")
+}
+
+record(bo, "$(P):Ctrl-$(B):$(ACT2)-cOn") {
+#   field (DESC, "Control Start/Stop of the $(B):$(ACT2) sequence")
+   field (PINI, "YES")
+   field (ZNAM, "Stop")
+   field (ONAM, "Start")
+}

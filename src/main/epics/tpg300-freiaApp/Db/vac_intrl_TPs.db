@@ -1,0 +1,22 @@
+# HNOSS Isolation vacuum interlocks
+
+# Turbo pump TP001 (ICB) permissions
+# Return 2 bits shifted to the left by 2
+# Bit 2: Pump Off
+# Bit 3: Ready to start
+record(calc, "CstatH:Ctrl-IBox:$(ACT1)-sTP001") {
+   field (INPA, "$(P):TP001:sStatus")
+   field (INPB, "$(P):TP001:cRemote")
+   field (CALC, "(((A<3)||(A=6))<<2)+(((A=0)&&(B=1))<<3)")
+}
+
+# Turbo pump TP002 (HNOSS) permissions
+# Return 2 bits shifted to the left by 2
+# Bit 2: Pump Off
+# Bit 3: Ready to start
+record(calc, "CstatH:Ctrl-HNOSS:$(ACT1)-sTP002") {
+   field (INPA, "$(P):TP002:sStatus")
+   field (INPG, "0x400")
+   field (INPH, "0x8201")
+   field (CALC, "((!(A&G))<<2)+(((A&H)=H)<<3)")
+}

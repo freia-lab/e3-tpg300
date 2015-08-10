@@ -1,0 +1,4 @@
+alias("$(PREFIX):A1-PRES-RBV","$(P):$(CHA1):sRdV")
+alias("$(PREFIX):A2-PRES-RBV","$(P):$(CHA2):sRdV")
+alias("$(PREFIX):B1-PRES-RBV","$(P):$(CHB1):sRdV")
+alias("$(PREFIX):B2-PRES-RBV","$(P):$(CHB2):sRdV")
