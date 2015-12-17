@@ -41,7 +41,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <packaging>
-                        <package>
+                        <package name="ioc">
                         	<requires>%{codac_rpm_prefix}-epics-tpg300</requires>
                         	<include type="ioc" name="tpg300-freia" runlevels="345" />
 						</package>
