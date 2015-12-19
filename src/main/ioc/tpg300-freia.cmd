@@ -1,5 +1,5 @@
-require tpg300,konrad
-require tpg300_freia,konrad
+#require tpg300_freia,konrad
+require ioc_tpg300_freia
 
 epicsEnvSet("PREFIX-1", "TPG300-1")
 epicsEnvSet("PREFIX-2", "TPG300-2")
