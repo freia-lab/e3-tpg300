@@ -1,5 +1,5 @@
 EXCLUDE_ARCHS += eldk
-EXCLUDE_VERSIONS += 3.15.2
+#EXCLUDE_VERSIONS += 3.15.2
 
 include ${EPICS_ENV_PATH}/module.Makefile
 
