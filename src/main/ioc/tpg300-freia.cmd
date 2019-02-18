@@ -1,3 +1,5 @@
+require asyn,4.31.0+
+
 epicsEnvSet("PREFIX-1", "TPG300-1")
 epicsEnvSet("PREFIX-2", "TPG300-2")
 epicsEnvSet("PREFIX-3", "TPG300-3")
@@ -42,7 +44,7 @@ dbLoadRecords("aliases.template","PREFIX=TPG300-1,P=CstatH-Vac,CHA1=PT010,CHA2=P
 dbLoadRecords("aliases.template","PREFIX=TPG300-2,P=CstatH-Vac,CHA1=PT016,CHA2=PT014,CHB1=PT017,CHB2=PT015")
 dbLoadRecords("aliases.template","PREFIX=TPG300-3,P=CstatH-Vac,CHA1=PT020,CHA2=PT021,CHB1=PT022,CHB2=PT023")
 dbLoadRecords("aliases.template","PREFIX=TPG300-4,P=CstatH-Vac,CHA1=PT024,CHA2=PT025,CHB1=PT026,CHB2=PT027")
-dbLoadRecords("aliases.template","PREFIX=TPG300-5,P=CstatH-Vac,CHA1=PT028,CHA2=PT029,CHB1=PT030,CHB2=PT031")
+dbLoadRecords("aliases.template","PREFIX=TPG300-5,P=CM-Vac,CHA1=PT028,CHA2=PT029,CHB1=PT030,CHB2=PT031")
 
 dbLoadRecords("isol_vac_intrl.db", "P=CstatH-Vac,B=HNOSS,ACT1=StartPmp,ACT2=StopPmp,P_IN=PT004,P_OUT1=PT015,T_IN=LN2:TT214A,FV=FV001,TP=TP002")
 dbLoadRecords("isol_vac_intrl.db", "P=CstatH-Vac,B=IBox,ACT1=StartPmp,ACT2=StopPmp,P_IN=PT001,P_OUT1=PT014,T_IN=IBoxN2:TT401B,FV=FV000,TP=TP001")
