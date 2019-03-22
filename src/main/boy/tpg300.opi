@@ -203,7 +203,9 @@
       <s>TPG300-3</s>
       <s>TPG300-4</s>
       <s>TPG300-5</s>
-    </items>
+      <s>TPG300-7</s>
+      <s>TPG300-8</s>
+     </items>
     <items_from_pv>false</items_from_pv>
     <name>Device prefix combo</name>
     <pv_name>loc://TPG300DeviceName</pv_name>
