@@ -58,6 +58,7 @@ dbLoadRecords("aliases.template","PREFIX=TPG300-2,P=CstatH-Vac,CHA1=PT016,CHA2=P
 dbLoadRecords("aliases.template","PREFIX=TPG300-3,P=CstatH-Vac,CHA1=PT020,CHA2=PT021,CHB1=PT022,CHB2=PT023")
 dbLoadRecords("aliases.template","PREFIX=TPG300-4,P=CstatH-Vac,CHA1=PT024,CHA2=PT025,CHB1=PT026,CHB2=PT027")
 dbLoadRecords("aliases.template","PREFIX=TPG300-5,P=CM-Vac,CHA1=PT028,CHA2=PT029,CHB1=PT030,CHB2=PT031")
+dbLoadRecords("aliases.template","PREFIX=TPG300-5,P=CM-Vac,CHA1=PT10,CHA2=NonA2,CHB1=PT20,CHB2=NonB2")
 dbLoadRecords("aliases.template","PREFIX=TPG300-7,P=CstatV-Vac,CHA1=PT040,CHA2=PT041,CHB1=PT042,CHB2=PT043")
 dbLoadRecords("aliases.template","PREFIX=TPG300-8,P=CstatV-Vac,CHA1=PT044,CHA2=PT045,CHB1=PT046,CHB2=PT047")
 
