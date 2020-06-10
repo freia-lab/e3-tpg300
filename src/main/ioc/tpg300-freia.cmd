@@ -60,7 +60,7 @@ dbLoadRecords("aliases.template","PREFIX=TPG300-4,P=CstatH-Vac,CHA1=PT024,CHA2=P
 dbLoadRecords("aliases.template","PREFIX=TPG300-5,P=CM-Vac,CHA1=PT028,CHA2=PT029,CHB1=PT030,CHB2=PT031")
 dbLoadRecords("aliases.template","PREFIX=TPG300-5,P=CM-Vac,CHA1=PT10,CHA2=NonA2,CHB1=PT20,CHB2=NonB2")
 dbLoadRecords("aliases.template","PREFIX=TPG300-7,P=CstatV-Vac,CHA1=PT040,CHA2=PT041,CHB1=PT042,CHB2=PT043")
-dbLoadRecords("aliases.template","PREFIX=TPG300-8,P=CstatV-Vac,CHA1=PT044,CHA2=PT045,CHB1=PT046,CHB2=PT047")
+dbLoadRecords("aliases.template","PREFIX=TPG300-8,P=CstatV-Vac,CHA1=PT044,CHA2=PT047,CHB1=PT046,CHB2=PT045")
 
 dbLoadRecords("isol_vac_intrl.db", "P=CstatH-Vac,B=HNOSS,ACT1=StartPmp,ACT2=StopPmp,P_IN=PT004,P_OUT1=PT015,T_IN=LN2:TT214A,FV=FV001,TP=TP002")
 dbLoadRecords("isol_vac_intrl.db", "P=CstatH-Vac,B=IBox,ACT1=StartPmp,ACT2=StopPmp,P_IN=PT001,P_OUT1=PT014,T_IN=IBoxN2:TT401B,FV=FV000,TP=TP001")
