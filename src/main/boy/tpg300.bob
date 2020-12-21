@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>TPG300</name>
+  <macros>
+    <Device_driver>SOFTBCM</Device_driver>
+  </macros>
+  <width>1200</width>
+  <height>880</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="label" version="2.0.0">
+    <name>Label_94</name>
+    <text>      TPG300 Pressure Gauge Controller</text>
+    <width>1190</width>
+    <height>45</height>
+    <font>
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="10" green="37" blue="73">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container Template</name>
+    <file>tpg300Main.opi</file>
+    <y>50</y>
+    <width>1191</width>
+    <height>771</height>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="ClearOPIRule" prop_id="opi_file" out_exp="false">
+        <exp bool_exp="false">
+          <value></value>
+        </exp>
+        <exp bool_exp="true">
+          <value></value>
+        </exp>
+        <pv_name>loc://TPG300DeviceName</pv_name>
+      </rule>
+      <rule name="SetOPIRule" prop_id="opi_file" out_exp="false">
+        <exp bool_exp="true">
+          <value>tpg300Main.opi</value>
+        </exp>
+        <pv_name>loc://TPG300DeviceName</pv_name>
+      </rule>
+    </rules>
+    <scripts>
+      <script file="Scripts/prefix2Macro.py">
+        <pv_name>loc://TPG300DeviceName</pv_name>
+      </script>
+    </scripts>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_86</name>
+    <text>Device Prefix</text>
+    <x>700</x>
+    <y>5</y>
+    <width>139</width>
+    <height>35</height>
+    <font>
+      <font name="GROUP-HEADER" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Device prefix combo</name>
+    <pv_name>loc://TPG300DeviceName</pv_name>
+    <x>840</x>
+    <y>5</y>
+    <width>160</width>
+    <height>35</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <items>
+      <item>TPG300-1</item>
+      <item>TPG300-2</item>
+      <item>TPG300-3</item>
+      <item>TPG300-4</item>
+      <item>TPG300-5</item>
+      <item>TPG300-7</item>
+      <item>TPG300-8</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>DevPrefix</name>
+    <pv_name>loc://TPG300DeviceName</pv_name>
+    <x>1013</x>
+    <y>5</y>
+    <width>156</width>
+    <height>35</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <format>6</format>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)</tooltip>
+  </widget>
+</display>
