@@ -1,0 +1,3 @@
+[submodule "vac_ctrl_tpg300_500"]
+	path = vac_ctrl_tpg300_500
+	url = https://gitlab.esss.lu.se/epics-modules/vac/vac_ctrl_tpg300_500.git

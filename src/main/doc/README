@@ -1,8 +1,0 @@
-Start the ioc server with the command:
-iocsh -r ioc_tpg300_freia[,version] -c "requireSnippet(tpg300-freia.cmd)"
-
-To start it automatically on diskless target write a following in /opt/startup/ioc/<target_name>/{ioc_name}/st.cmd:
-
-require ioc_tpg300_freia[,version]
-requireSnippet(tpg300-freia.cmd)
-
