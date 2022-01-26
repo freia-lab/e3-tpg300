@@ -31,10 +31,16 @@ ARCH_FILTER += linux-x86_64
 # 
 # with $(ASYN_DEP_VERSION) defined in `configure/CONFIG_MODULE`
 
+REQUIRED += stream
+ifneq ($(strip $(STREAM_DEP_VERSION)),)
+stream_VERSION=$(STREAM_DEP_VERSION)
+endif
+
+
 # Since this file (tpg300.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative
 # to that path
-APP := tpg300App
+APP := vac_ctrl_tpg300_500App
 APPDB := $(APP)/Db
 APPSRC := $(APP)/src
 
@@ -47,12 +53,15 @@ APPSRC := $(APP)/src
 
 TEMPLATES += $(wildcard $(APPDB)/*.db)
 TEMPLATES += $(wildcard $(APPDB)/*.proto)
-TEMPLATES += $(wildcard $(APPDB)/*.template)
+#TEMPLATES += $(wildcard $(APPDB)/*.template)
+
+SOURCES += $(APPSRC)/tpg300_500StreamFormatConverter.cpp
 
 SCRIPTS += $(wildcard ../iocsh/*.iocsh)
+SCRIPTS += $(wildcard iocsh/*.iocsh)
 
 SUBS = $(wildcard $(APPDB)/*.substitutions)
-TMPS = $(wildcard $(APPDB)/*.template)
+#TMPS = $(wildcard $(APPDB)/*.template)
 
 USR_DBFLAGS += -I . -I ..
 USR_DBFLAGS += -I $(EPICS_BASE)/db

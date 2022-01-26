@@ -32,9 +32,9 @@ iocshLoad(${tpg300_DIR}/vac_ctrl_tpg300_500_moxa.iocsh, "DEVICENAME = TPG300-8, 
 #iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_1_relay_freia.iocsh, "DEVICENAME = CH-A1, CHANNEL = A1, SOURCE = A,  CONTROLLERNAME = TPG300-8, BOARD = PE, GAUGE = TPR18, RELAY1_SOURCE = A, RELAY1 = 1")
 #iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_no_relays_freia.iocsh, "DEVICENAME = CH-A1, CHANNEL = A1, SOURCE = A,  CONTROLLERNAME = TPG300-8, BOARD = PE, GAUGE = TPR18")
 
-#- Configuration: Sensor A1 Relay1 and Relay2, Sensor B1 Relay3 and Relay4, Sensors A2 and B2 - no relays
+#- Configuration: Sensor A1 Relay1, Sensor B1 Relay2, Sensor A2 relay3, Sensor B2 Relay4
 
-iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_freia.iocsh, "DEVICENAME = CH-A1, CHANNEL = A1, SOURCE = A,  CONTROLLERNAME = TPG300-8, BOARD = PE, GAUGE = IKR50, RELAY1_SOURCE = A, RELAY1 = 1, RELAY2_SOURCE = B, RELAY2 = 2")
-iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_no_relays_freia.iocsh, "DEVICENAME = CH-A2, CHANNEL = A2, SOURCE = B,  CONTROLLERNAME = TPG300-8, BOARD = PE, GAUGE = TPR18")
-iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_freia.iocsh, "DEVICENAME = CH-B1, CHANNEL = B1, SOURCE = C,  CONTROLLERNAME = TPG300-8, BOARD = PI, GAUGE = TPR18, RELAY1_SOURCE = C, RELAY1 = 3, RELAY2_SOURCE = D, RELAY2 = 4")
-iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_no_relays_freia.iocsh, "DEVICENAME = CH-B2, CHANNEL = B2, SOURCE = D, CONTROLLERNAME = TPG300-8, BOARD = PI, GAUGE = TPR18")
+iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_1_relay_freia.iocsh, "DEVICENAME = CH-A1, CHANNEL = A1, SOURCE = A,  CONTROLLERNAME = TPG300-8, BOARD = PE, GAUGE = IKR50, RELAY1_SOURCE = A, RELAY1 = 1")
+iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_1_relay_freia.iocsh, "DEVICENAME = CH-A2, CHANNEL = A2, SOURCE = B,  CONTROLLERNAME = TPG300-8, BOARD = PE, GAUGE = TPR18, RELAY1_SOURCE = C, RELAY1 = 3")
+iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_1_relay_freia.iocsh, "DEVICENAME = CH-B1, CHANNEL = B1, SOURCE = C,  CONTROLLERNAME = TPG300-8, BOARD = PI, GAUGE = TPR18, RELAY1_SOURCE = B, RELAY1 = 2")
+iocshLoad(${tpg300_DIR}/_vac_gauge_tpg300_vgc_1_relay_freia.iocsh, "DEVICENAME = CH-B2, CHANNEL = B2, SOURCE = D,  CONTROLLERNAME = TPG300-8, BOARD = PI, GAUGE = TPR18, RELAY1_SOURCE = D, RELAY1 = 4")
