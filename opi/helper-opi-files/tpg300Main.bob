@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>tpg300Main</name>
+  <macros>
+    <CONTROLLER_TYPE>tpg300</CONTROLLER_TYPE>
+  </macros>
+  <width>785</width>
+  <height>625</height>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <DEVICENAME>$(DEVICENAME_A2)</DEVICENAME>
+    </macros>
+    <file>../../freia-symbols/display-builder/tpg300/vgc/faceplates/vac_tpg-vgc-brief.bob</file>
+    <x>400</x>
+    <y>10</y>
+    <width>380</width>
+    <height>310</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <DEVICENAME>$(DEVICENAME_A1)</DEVICENAME>
+    </macros>
+    <file>../../freia-symbols/display-builder/tpg300/vgc/faceplates/vac_tpg-vgc-brief.bob</file>
+    <x>10</x>
+    <y>10</y>
+    <width>380</width>
+    <height>310</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <DEVICENAME>$(DEVICENAME_B1)</DEVICENAME>
+    </macros>
+    <file>../../freia-symbols/display-builder/tpg300/vgc/faceplates/vac_tpg-vgc-brief.bob</file>
+    <x>10</x>
+    <y>320</y>
+    <width>380</width>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <DEVICENAME>$(DEVICENAME_B2)</DEVICENAME>
+    </macros>
+    <file>../../freia-symbols/display-builder/tpg300/vgc/faceplates/vac_tpg-vgc-brief.bob</file>
+    <x>400</x>
+    <y>320</y>
+    <width>380</width>
+  </widget>
+</display>
