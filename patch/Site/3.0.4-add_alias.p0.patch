@@ -1,0 +1,12 @@
+diff --git vac_ctrl_tpg300_500App/Db/vac_gauge_tpg300.db vac_ctrl_tpg300_500App/Db/vac_gauge_tpg300.db
+index 911ca01..504f58e 100644
+--- vac_ctrl_tpg300_500App/Db/vac_gauge_tpg300.db
++++ vac_ctrl_tpg300_500App/Db/vac_gauge_tpg300.db
+@@ -158,6 +158,7 @@ record(calcout, "${P}${R}iPrsCalc")
+ 
+ record(ai, "${P}${R}PrsR")
+ {
++  alias("${P}${R}sRdV")
+   field(PREC, "2")
+   field(EGU,  "${EGU=mBar}")
+ 
