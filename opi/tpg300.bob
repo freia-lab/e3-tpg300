@@ -8,43 +8,73 @@
     <tabs>
       <tab>
         <name>TPG300-1</name>
-        <file></file>
+        <file>helper-opi-files/tpg300Main.bob</file>
         <macros>
+          <CONTROLLER>TPG300-1</CONTROLLER>
+          <DEVICENAME_A1>CstatH-Vac:PT010</DEVICENAME_A1>
+          <DEVICENAME_A2>CstatH-Vac:PT011</DEVICENAME_A2>
+          <DEVICENAME_B1>CstatH-Vac:PT012</DEVICENAME_B1>
+          <DEVICENAME_B2>CstatH-Vac:PT013</DEVICENAME_B2>
         </macros>
         <group_name></group_name>
       </tab>
       <tab>
         <name>TPG300-2</name>
-        <file></file>
+        <file>helper-opi-files/tpg300Main.bob</file>
         <macros>
+          <CONTROLLER>TPG300-2</CONTROLLER>
+          <DEVICENAME_A1>CstatH-Vac:PT016</DEVICENAME_A1>
+          <DEVICENAME_A2>CstatH-Vac:PT014</DEVICENAME_A2>
+          <DEVICENAME_B1>CstatH-Vac:PT017</DEVICENAME_B1>
+          <DEVICENAME_B2>CstatH-Vac:PT015</DEVICENAME_B2>
         </macros>
         <group_name></group_name>
       </tab>
       <tab>
         <name>TPG300-3</name>
-        <file></file>
+        <file>helper-opi-files/tpg300Main.bob</file>
         <macros>
+          <CONTROLLER>TPG300-3</CONTROLLER>
+          <DEVICENAME_A1>CstatH-Vac:PT020</DEVICENAME_A1>
+          <DEVICENAME_A2>CstatH-Vac:PT021</DEVICENAME_A2>
+          <DEVICENAME_B1>CstatH-Vac:PT022</DEVICENAME_B1>
+          <DEVICENAME_B2>CstatH-Vac:PT023</DEVICENAME_B2>
         </macros>
         <group_name></group_name>
       </tab>
       <tab>
         <name>TPG300-4</name>
-        <file></file>
+        <file>helper-opi-files/tpg300Main.bob</file>
         <macros>
+          <CONTROLLER>TPG300-4</CONTROLLER>
+          <DEVICENAME_A1>CstatH-Vac:PT024</DEVICENAME_A1>
+          <DEVICENAME_A2>CstatH-Vac:PT025</DEVICENAME_A2>
+          <DEVICENAME_B1>CstatH-Vac:PT026</DEVICENAME_B1>
+          <DEVICENAME_B2>CstatH-Vac:PT027</DEVICENAME_B2>
         </macros>
         <group_name></group_name>
       </tab>
       <tab>
         <name>TPG300-5</name>
-        <file></file>
+        <file>helper-opi-files/tpg300Main.bob</file>
         <macros>
+          <CONTROLLER>TPG300-5</CONTROLLER>
+          <DEVICENAME_A1>CM-Vac:PT10</DEVICENAME_A1>
+          <DEVICENAME_A2>CM-Vac:NonA2</DEVICENAME_A2>
+          <DEVICENAME_B1>CM-Vac:PT20</DEVICENAME_B1>
+          <DEVICENAME_B2>CM-Vac:NonB2</DEVICENAME_B2>
         </macros>
         <group_name></group_name>
       </tab>
       <tab>
         <name>TPG300-7</name>
-        <file></file>
+        <file>helper-opi-files/tpg300Main.bob</file>
         <macros>
+          <CONTROLLER>TPG300-7</CONTROLLER>
+          <DEVICENAME_A1>CstatV-Vac:PT040</DEVICENAME_A1>
+          <DEVICENAME_A2>CstatV-Vac:PT041</DEVICENAME_A2>
+          <DEVICENAME_B1>CstatV-Vac:PT042</DEVICENAME_B1>
+          <DEVICENAME_B2>CstatV-Vac:PT043</DEVICENAME_B2>
         </macros>
         <group_name></group_name>
       </tab>
@@ -66,6 +96,5 @@
     <width>800</width>
     <height>670</height>
     <direction>0</direction>
-    <active_tab>6</active_tab>
   </widget>
 </display>

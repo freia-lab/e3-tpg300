@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <macros>
+    <P>ioc06-tpg300</P>
+  </macros>
+  <height>700</height>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <R>:asynRec</R>
+    </macros>
+    <file>../../freia-symbols/display-builder/asyn/asynRecord.bob</file>
+    <x>20</x>
+    <y>60</y>
+    <width>450</width>
+    <height>620</height>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(P):asynRec.PORT</pv_name>
+    <x>170</x>
+    <y>20</y>
+    <width>150</width>
+    <items>
+      <item>TPG300-1</item>
+      <item>TPG300-2</item>
+      <item>TPG300-3</item>
+      <item>TPG300-4</item>
+      <item>TPG300-5</item>
+      <item>TPG300-7</item>
+      <item>TPG300-8</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Asyn Port Name</text>
+    <x>40</x>
+    <y>20</y>
+    <width>120</width>
+    <height>30</height>
+  </widget>
+</display>
