@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>TPG300</name>
-  <width>810</width>
+  <width>830</width>
   <height>680</height>
   <widget type="navtabs" version="2.0.0">
     <name>Navigation Tabs</name>
@@ -90,10 +90,22 @@
         </macros>
         <group_name></group_name>
       </tab>
+      <tab>
+        <name>TPG300-9</name>
+        <file>helper-opi-files/tpg300Main.bob</file>
+        <macros>
+          <CONTROLLER>TPG300-9</CONTROLLER>
+          <DEVICENAME_A1>CstatV-Vac:PT052</DEVICENAME_A1>
+          <DEVICENAME_A2>CstatV-Vac:PT053</DEVICENAME_A2>
+          <DEVICENAME_B1>CstatV-Vac:PT054</DEVICENAME_B1>
+          <DEVICENAME_B2>CstatV-Vac:PT055</DEVICENAME_B2>
+        </macros>
+        <group_name></group_name>
+      </tab>
     </tabs>
     <x>10</x>
     <y>10</y>
-    <width>800</width>
+    <width>820</width>
     <height>670</height>
     <direction>0</direction>
   </widget>
